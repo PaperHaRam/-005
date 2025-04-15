@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이든 셔 도감</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121829; /* 전체 배경 */
+      color: #ffffff;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1920px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-section {
+      background-color: #ad3e3e; /* 퍼스널 컬러 */
+      padding: 30px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-section h1 {
+      font-size: 2.5rem;
+      color: white;
+    }
+
+    .top-section span {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .image-section {
+      background-color: #ad3e3e; /* 퍼스널 컬러 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .image-section img {
+      max-height: 300px;
+    }
+
+    .info-section {
+      background-color: #1E2638;
+      padding: 40px 80px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .types {
+      display: flex;
+      gap: 20px;
+    }
+
+    .type {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .type.grass {
+      background-color: #831616; /* 특징 1 */
+    }
+
+    .type.poison {
+      background-color: #57ccd3; /* 특징 2 */
+    }
+
+    .info-grid {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+    }
+
+    .info-item span {
+      display: block;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .info-item strong {
+      font-size: 1.6rem;
+    }
+
+    .base-stats, .description {
+      text-align: center;
+    }
+
+    .base-stats h2, .description h2 {
+      margin-bottom: 10px;
+      color: #ad3e3e; /* 퍼스널 컬러 */
+    }
+
+    .stat-list {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <h1>Eden Shire</h1>
+      <span>#005</span>
+    </div>
+
+    <div class="image-section">
+      <img src="https://files.d20.io/images/437040792/LlIWhLFJFec_Uez_KwimXQ/max.png" alt="포켓몬 이미지" />
+    </div>
+
+    <div class="info-section">
+      <div class="types">
+        <div class="type grass">트레미어</div>
+        <div class="type poison">인플루언서</div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span>Age</span>
+          <strong>165</strong>
+        </div>
+        <div class="info-item">
+          <span>Weight</span>
+          <strong>88kg</strong>
+        </div>
+        <div class="info-item">
+          <span>Height</span>
+          <strong>197cm</strong>
+        </div>
+        <div class="info-item">
+          <span>Main Ability</span>
+          <strong>혈마법<br>첨단 기술</strong>
+        </div>
+      </div>
+
+      <div class="base-stats">
+        <h2>기본 능력치</h2>
+        <div class="stat-list">
+          <div>신체 평균 2.33</div>
+          <div>사회 평균 3</div>
+          <div>정신 평균 2.33</div>
+        </div>
+      </div>
+
+      <div class="description">
+        <h2>설명</h2>
+        <p>트레미어의 딱딱한 체제를 바꾸고 싶어 하던 대부에게 포옹된 피터 클라크.<br>혈귀가 된 시점에서 예전과 같은 삶은 살지 못할 것이라 판단해 이름을 버리고,<br>코주부 영감이라는 인터넷 신분을 만들며, 이든 셔 라는 이름으로 살아가게 된다.<br>하지만 말 없이 나오게 된 마당이어서 그런지 가족들이 눈에 밟혔으며,<br>가족과 함께하지 못하는 아쉬움을 젊은이들과 인터넷에서 소통하는 것으로 대체하게 된다.<br>그렇게 살아온지 어언 100년,<br>이든 셔는 맨체스터의 중진이 되어 맨체스터를 함께 이끌어달라는 프린스의 제안을 받게 된다.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
